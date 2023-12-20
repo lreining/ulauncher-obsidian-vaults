@@ -1,0 +1,23 @@
+{
+    "required_api_version": "2",
+    "name": "Obsidian Vault Launcher",
+    "description": "A ulauncher extension to open obsidian vaults.",
+    "developer_name": "Kappabyte",
+    "icon": "images/icon.png",
+    "preferences": [
+        {
+            "id": "kw",
+            "type": "keyword",
+            "name": "Keyword",
+            "description": "The keyword to activate this extension",
+            "default_value": "ov"
+        },
+        {
+            "id": "obsidian_config",
+            "type": "input",
+            "name": "Obsidian Config",
+            "description": "The location of the Obsidian configuration file.",
+            "default_value": "~/.config/obsidian/obsidian.json"
+        }
+    ]
+}
