@@ -1,6 +1,4 @@
-<center>
-<img src="images/icon.png" width=100>
-</center>
+<img src="images/logo.png" width=150>
 
 # Ulauncher Obsidian Vaults
 A simple extension for ulauncher to open your obsidian vaults.
