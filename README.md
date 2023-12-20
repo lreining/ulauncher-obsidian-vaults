@@ -1,6 +1,4 @@
-<center>
-<img src="images/icon.png" width=100>
-</center>
+<img src="images/logo.png" width=150>
 
 # Ulauncher Obsidian Vaults
 A simple extension for ulauncher to open your obsidian vaults.
@@ -39,6 +37,6 @@ Here you can change where the extension looks for the `obsidian.json` file, whic
 When ulauncher is open, simply type the keyword you defined in the configuration (by default, `ov`), followed by a space. Your list of vaults should appear. 
 Any further input is treated as a filter for the results.
 
-# Contributing
+## Contributing
 
 Feel free to open an issue or pull request if you would like to contribute or have any problems with the extension.
