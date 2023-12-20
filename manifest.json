@@ -1,7 +1,7 @@
 {
     "required_api_version": "2",
     "name": "Obsidian Vault Launcher",
-    "description": "A ulauncher extension to open obsidian vaults.",
+    "description": "A ulauncher extension to open obsidian.md vaults.",
     "developer_name": "Kappabyte",
     "icon": "images/icon.png",
     "preferences": [
