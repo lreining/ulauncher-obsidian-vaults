@@ -31,6 +31,12 @@ class KeywordQueryEventListener(EventListener):
                                                on_enter=OpenAction(f"obsidian://open?vault={id}"))
                     if event.get_argument() == None or event.get_argument() in name:
                         items.append(item)
+
+                if len(items) == 0:
+                    items.append(ExtensionResultItem(icon="images/error.png",
+                                                     name="Error",
+                                                     description="No vaults found!",
+                                                     on_enter=DoNothingAction()))
         except IOError as error:
             items = [
                         ExtensionResultItem(icon="images/error.png",
