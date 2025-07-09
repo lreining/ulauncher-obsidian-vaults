@@ -22,6 +22,7 @@ class KeywordQueryEventListener(EventListener):
                 data = json.loads(file.read())
                 print(data["vaults"].values())
                 items = []
+                argument = event.get_argument()
                 for (id, vault) in data["vaults"].items():
                     path = vault["path"]
                     name = os.path.basename(path)
@@ -29,7 +30,7 @@ class KeywordQueryEventListener(EventListener):
                                                name=name,
                                                description=path,
                                                on_enter=OpenAction(f"obsidian://open?vault={id}"))
-                    if event.get_argument() == None or event.get_argument() in name:
+                    if event.get_argument() == None or argument.lower() in name.lower():
                         items.append(item)
 
                 if len(items) == 0:
